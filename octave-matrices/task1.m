@@ -2,7 +2,6 @@
 # кроме первой строки, в которой все элементы единицы.
 
 function M = task1()
-  a = ones(1, 10)
-  X = zeros(9,10);
-  M = cat(1, a, X)
+  M = zeros(10,10)
+  M(1, :) = 1
 endfunction
