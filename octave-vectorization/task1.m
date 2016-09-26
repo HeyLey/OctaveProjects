@@ -6,6 +6,8 @@
 # которое считает значение многочлена a в точке x.
 
 
-function f = task1()
-  
+function f = task1(a, x)
+     s = length(a)
+     v = (0:(s-1))
+     f = sum(a .* (x.^v))
 endfunction
