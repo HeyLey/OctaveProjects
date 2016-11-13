@@ -1,0 +1,1 @@
+function plot_lines(a, xrange, yrange)  rows = size(a, 1)  figure(1)  hold on  for i = 1:rows    task5(a(i,:), xrange, yrange)  endfor    legendendfunction

@@ -1,0 +1,1 @@
+function quality = clusterization_quality(points, k, clusters)  quality = 0.0    centers = zeros(k,2)    for i = 1:k    centers(i, :) = mean(points(clusters==i,:), 1)  endfor  for i = 1:k      quality = quality + sum((centers(i, :) .- points) .^ 2)  endforendfunction

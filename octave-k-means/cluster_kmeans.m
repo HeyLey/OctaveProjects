@@ -1,0 +1,1 @@
+function best_clusters = cluster_kmeans(points, k)  best_clusters = []  best_score = +Inf  for j = 1:10    clusters = cluster_once(points, k)    score = clusterization_quality(points, k, clusters)    if (score < best_score)      best_score = score      best_clusters = clusters    endif  endforendfunction
